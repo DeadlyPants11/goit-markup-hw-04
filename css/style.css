@@ -9,6 +9,8 @@
   --btn-: #1766a7;
   --color-footer: rgba(255, 255, 255, 0.6);
   --color-head: #c4c4c4;
+  --color-picture-box: #f5f4fa;
+  --color-client: #afb1b8;
 }
 
 h1,
@@ -131,13 +133,39 @@ header .container {
   color: var(--color-logo);
 }
 
+.header-email {
+  width: 16px;
+  height: 12px;
+  fill: var(--color-text3);
+}
+
+.menu-contact:hover .header-email,
+.menu-contact:focus .header-email {
+  fill: var(--color-logo);
+}
+
+.header-tell {
+  width: 10px;
+  height: 16px;
+  fill: var(--color-text3);
+}
+
+.menu-contact:hover .header-tell,
+.menu-contact:focus .header-tell {
+  fill: var(--color-logo);
+}
+
 .menu-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   color: var(--color-text3);
   text-decoration: none;
+  column-gap: 10px;
 }
 
 .menu-contact:hover {
@@ -155,8 +183,9 @@ header .container {
 section {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 
 .chapter-head {
   background-color: var(--color-head);
@@ -204,6 +233,21 @@ section {
 
 .chapter-btn:focus {
   background: var(--btn-);
+}
+
+.chapter-mid-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-picture-box);
+  margin-bottom: 30px;
+}
+
+.chapter-mid-picture {
+  width: 70px;
+  height: 70px;
 }
 
 .title {
@@ -260,7 +304,7 @@ section {
   font-size: 16px;
   line-height: 1.7;
   color: var(--color-text3);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -298,6 +342,72 @@ section {
 
 .chapter-mid {
   padding-bottom: 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--color-logo);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-client);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--color-text1);
+}
+
+.icon-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.icon-client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-client);
+  border-radius: 4px;
+}
+
+.icon-client-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--color-client);
+}
+
+.icon-client-item:hover,
+.icon-client-item:focus {
+  border: 1px solid var(--color-logo);
+}
+
+.icon-client-item:hover .icon-client-icon,
+.icon-client-item:focus .icon-client-icon {
+  fill: var(--color-logo);
 }
 
 /* End Main Index */
@@ -352,6 +462,11 @@ section {
   width: 370px;
 }
 
+.wall:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .menu-port {
   display: flex;
   margin-bottom: 50px;
@@ -396,8 +511,59 @@ section {
 
 .ftr .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+  column-gap: 70px;
+}
+
+.social-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text1);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.social-list-f {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.social-list-link-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-link-f:hover,
+.social-list-link-f:focus {
+  background-color: var(--color-logo);
+}
+
+.social-list-icon-f {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text1);
+}
+
+.social-list-link-f:hover .social-list-icon-f,
+.social-list-link-f:focus .social-list-icon-f {
+  fill: var(--color-text1);
+}
+
+.social-footer {
+  margin-top: 10px;
 }
 
 address {
