@@ -8,6 +8,7 @@
   --black-: #000000;
   --btn-: #1766a7;
   --color-footer: rgba(255, 255, 255, 0.6);
+  --color-head: #c4c4c4;
 }
 
 h1,
@@ -53,7 +54,6 @@ nav .menu {
 
 header {
   display: flex;
-  justify-content: center;
   height: 80px;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -102,6 +102,23 @@ header .container {
   text-decoration: none;
 }
 
+.menu-item-one {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text2);
+  text-decoration: none;
+}
+
+/* .menu-item-one::after {
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  content: "";
+} */
+
 .menu-item:hover {
   color: var(--color-logo);
 }
@@ -140,11 +157,18 @@ section {
   justify-content: center;
 }
 
+
 .chapter-head {
-  background-color: var(--color-main1-footer);
+  background-color: var(--color-head);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img.jpg);
+  background-size: cover;
 }
 
 .chapter-text {
@@ -275,6 +299,7 @@ section {
 .chapter-mid {
   padding-bottom: 0;
 }
+
 /* End Main Index */
 
 /* Start Main Portfolio  */
